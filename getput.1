@@ -209,7 +209,7 @@ start of the object as comma separated pairs, noting the first byte is byte 0.
 When there are multiple puts/gets, the same get-by-range will apply to each object.
 
 There is an interesting behavior with ranged GETs and that is when benchmarking
-using many processes with which you wish to push swift to its max. IYou can 
+using many processes with which you wish to push swift to its max. You can 
 easily find yourself in a situation where you can run many more processes for
 GETs than PUTs since the object being retrieved may be much smaller and therefore
 able to sustain higher levels of parallelism. Say you created a bunch of 100MB
